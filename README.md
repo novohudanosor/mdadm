@@ -1,2 +1,2 @@
-# ndadm
-ndadm
+# mdadm
+mdadm
