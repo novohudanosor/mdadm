@@ -4,6 +4,7 @@ mdadm
 после up вирт машины vagrant ssh
 mdadm --zero-superblock --force /dev/sd{b,c,d,e,f}    -  занулим супер блоки
 mdadm --create --verbose /dev/md0 -l 6 -n 5 /dev/sd{b,c,d,e,f}  - создаем масси 6 из 5 устройств
+mdadm --create --verbose /dev/md0 -l 1 -n 2 /dev/sdb /dev/sde    -   так создаем массив 1 из 2 устройств
 mdadm -D /dev/md0  - проверям, создался ли массив.
 создали конфигурационный файла mdadm.conf, который лежит /etc/mdadm/mdadm.conf  
 создали партиции:
