@@ -1,6 +1,6 @@
 # mdadm
-mdadm
-Из директории HWmdadm запускаем vagrant up
+# mdadm
+## Из директории HWmdadm запускаем vagrant up
 после up вирт машины vagrant ssh
 mdadm --zero-superblock --force /dev/sd{b,c,d,e,f}    -  занулим супер блоки
 mdadm --create --verbose /dev/md0 -l 6 -n 5 /dev/sd{b,c,d,e,f}  - создаем масси 6 из 5 устройств
